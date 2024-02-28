@@ -1,0 +1,180 @@
+/*EstilosGenerales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: beige; 
+}
+
+body{
+
+    background: radial-gradient(at center, #50ad6a, #151313);
+    font-family: 'PT sans' , sans-serif;
+}
+
+.BoxContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*EstilosHeader*/
+header{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .IconConteiner{
+    position: relative;
+}
+
+header .IconConteiner .Icono{
+    position: absolute;
+    bottom: 4.2vh;
+    left: 13vh;
+    width: 60px;
+    height: 70px;
+     filter: drop-shadow(0 0 10px #ffffff)  drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 10px #ffffff)  ; 
+    animation:dragon 3.7s infinite backwards;
+}
+
+@keyframes dragon {
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+header .IconConteiner p{
+    font-size: 5vh;
+    font-weight: bold;
+    text-shadow: 0 0 5px beige, 0 0 30px beige ;
+    color: beige;
+    animation:parpadear 3.7s infinite backwards;
+}
+
+@keyframes parpadear {
+    to{
+        text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0) ;
+        color: #151313;
+    }
+}
+
+
+
+header .menu{
+    display: flex;
+    margin: 10px 0;
+    border-bottom: 2px double #151313; 
+}
+
+header .menu li{
+    list-style: none;
+    margin: 1vw;
+    transition: transform 0.3s ease;
+} 
+
+header .menu li:hover{
+    transform: scale(1.2); 
+}
+
+
+header .menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+
+header .menu li a:hover{
+    filter: drop-shadow(0 0 10px #000000) drop-shadow(0 0 20px #000000) drop-shadow(0 0 50px #000000);
+    text-shadow: 0 0 1px beige; 
+    
+}
+
+.SecStyle{
+    max-width: 100%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 255, 13, 0.37);
+    backdrop-filter: blur (0.5px);
+    border:1px solid rgba(255, 255, 255, 0.18)
+}
+
+
+.Pintro{
+    font-size: 3.5vh;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.SpanGreen{
+    text-shadow: 0 0 5px #50ad6a, 0 0 30px #50ad6a ;
+    color: #50ad6a;
+}
+
+.SpanBlack{
+    text-shadow: 0 0 5px #000000, 0 0 30px #000000 ;
+    color: #000000;
+}
+
+
+/*slider*/
+
+.swiper{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.swiper-slide{
+    position: relative;
+    width: 320px;
+    aspect-ratio: 3/4 ;
+    border-radius: 14px;
+    border: 1px solid rgba(177, 177, 177, 0.4);
+}
+
+.swiper-slide video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    user-select: none;
+}
+
+.title{
+    position: absolute;
+    top: 4vh;
+    left: 50%;
+    transform: translate(-50% , -20%);
+    -ms-transform: translate(-50% , -20%); 
+    width: max-content;
+    text-align: center;
+    padding: 10px 18px;
+    background: rgba(46, 39, 39, 0.3);
+    border-radius: 8px;
+    border: 2px solid rgba(177, 177, 177, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.5s linear;
+}
+
+title span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.color-button-switer{
+    text-shadow: 0 0 5px #50ad6a, 0 0 30px #50ad6a ;
+    color: #50ad6a;
+}
+
+
+
