@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
     <title>Slay Agency</title>
     <link rel="icon" type="image/x-icon" href="./assets/icono.svg">
 </head>
@@ -15,7 +16,7 @@
         <header>
             <div class="IconConteiner">
                 <img src="./assets/icono.svg" alt="SlayIcono" class="Icono">
-                <p>SLAY <br> AGENCY </p>
+                <p >SLAY <br> AGENCY </p>
             </div>
             <ul class="menu">
                 <li><a href="#">Edicion</a></li>
@@ -32,38 +33,36 @@
                 línea. <span class="SpanBlack">¡Contáctanos y lleva tu marca al siguiente nivel!</span>
             </p>
             <section class="SecStyle Ed">
-                <h1>Edicion de Video</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, minima commodi nihil iure
-                    voluptatum consequuntur sed molestias? Mollitia id veniam ad aperiam cum, excepturi sunt fugiat
-                    ipsa, labore incidunt velit.</p>
+                <h1 class="TituloEd">Edicion de Video 📹</h1>
+                <p class="ParrafSec">Descubre nuestra experiencia en edición, donde cada detalle cuenta. Desde cortes simples hasta <span class="SpanGreen">efectos visuales impresionantes</span>, hacemos que tu contenido brille. Sea cual sea tu proyecto, destacamos con <span class="SpanGreen">creatividad y calidad</span>.</p>
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <video src="./assets/erroresparte14.mp4" controls muted></video>
+                            <video src="./images/erroresparte14.mp4" controls muted></video>
                             <div class="title">
                                 <span>video 1</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <video src="./assets/erroresparte14.mp4" controls muted></video>
+                            <video src="./images/erroresparte14.mp4" controls muted></video>
                             <div class="title">
                                 <span>video 2</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <video src="./assets/erroresparte14.mp4" controls muted></video>
+                            <video src="./images/erroresparte14.mp4" controls muted></video>
                             <div class="title">
                                 <span>video 3</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <video src="./assets/erroresparte14.mp4" controls muted></video>
+                            <video src="./images/erroresparte14.mp4" controls muted></video>
                             <div class="title">
                                 <span>video 4</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <video src="./assets/erroresparte14.mp4" controls muted></video>
+                            <video src="./images/erroresparte14.mp4" controls muted></video>
                             <div class="title">
                                 <span>video 5</span>
                             </div>
@@ -75,18 +74,40 @@
                 </div>
             </section>
             <section class="SecStyle Port">
-                <h2>Portadas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, minima commodi nihil iure
-                    voluptatum consequuntur sed molestias? Mollitia id veniam ad aperiam cum, excepturi sunt fugiat
-                    ipsa, labore incidunt velit.</p>
-                <div>
-                    <img src="" alt="Port">
-                    <img src="" alt="Port">
-                    <img src="" alt="Port">
-                    <img src="" alt="Port">
-                    <img src="" alt="Port">
-                    <img src="" alt="Port">
-                </div>
+                <h2 class="TituloEd">Portadas 🎴</h2>
+                <p class="ParrafSec">Explora nuestra destreza en <span class="SpanGreen">diseño de portadas</span>, donde cada detalle es crucial. Desde composiciones simples hasta <span class="SpanGreen">creaciones visualmente impactantes</span>, cuidamos cada aspecto para reflejar la esencia de tu obra. Sea cual sea tu estilo, nos esforzamos por hacer que tus portadas <span class="SpanBeige">destaquen con originalidad y profesionalismo</span>.</p>
+                <article class="Gallery">
+                    <div class="img-a">
+                        <a href="https://picsum.photos/600/300?random=1" data-lightbox="models" data-title="imagen-1">
+                            <img src="https://picsum.photos/600/300?random=1" alt="">    
+                        </a>
+                    </div>
+                    <div class="img-b">
+                        <a href="https://picsum.photos/300/300?random=2"  data-lightbox="models" data-title="imagen-2">
+                            <img src="https://picsum.photos/300/300?random=2" alt="">
+                        </a>
+                    </div>
+                    <div class="img-c">
+                        <a href="https://picsum.photos/300/600?random=3" data-lightbox="models" data-title="imagen-3">
+                            <img src="https://picsum.photos/300/600?random=3" alt="">
+                        </a>
+                    </div>
+                    <div class="img-d">
+                        <a href="https://picsum.photos/300/300?random=4" data-lightbox="models" data-title="imagen-4"> 
+                            <img src="https://picsum.photos/300/300?random=4" alt="">
+                        </a>
+                    </div>
+                    <div class="img-e">
+                        <a href="https://picsum.photos/300/300?random=5" data-lightbox="models" data-title="imagen-5">
+                            <img src="https://picsum.photos/300/300?random=5" alt="">
+                        </a>
+                    </div>
+                    <div class="img-f">
+                        <a href="https://picsum.photos/600/300?random=6" data-lightbox="models" data-title="imagen-6">
+                            <img src="https://picsum.photos/600/300?random=6" alt="">
+                        </a>
+                    </div>
+                </article>
             </section>
             <section class="SecStyle Cont">
                 <h3>Contenido</h3>
@@ -135,6 +156,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
